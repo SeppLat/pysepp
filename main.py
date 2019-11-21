@@ -1,5 +1,6 @@
 import torch 
 
-#Testscript, is pytorch is installed
-x = torch.Tensor(5,3)
+#Testscript, if pytorch is installed
+x = torch.randn(5,3,2)
 print(x)
+#lalala
