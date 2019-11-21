@@ -2,10 +2,11 @@ import torch
 import torch.nn as nn
 
 #Testscript, if pytorch is installed
-class Net(nn.Module):
+class FirstNet(nn.Module):
     def __init__(self):
-        super(Net, self).__init__()
-        self.linear1 = nn.Linear()
+        super(FirstNet, self).__init__()
+        self.linear1 = nn.Linear(10, 10)
+        self.linear2 = nn.Linear(10, 10)
 
     def forward(self, x):
         pass
@@ -13,5 +14,5 @@ class Net(nn.Module):
     def num_flat_features(self, x):
         pass
 
-net1 = Net()
-print(Net)
+net1 = FirstNet()
+print(FirstNet)
