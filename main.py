@@ -1,6 +1,17 @@
-import torch 
+import torch
+import torch.nn as nn
 
 #Testscript, if pytorch is installed
-x = torch.randn(5,3,2)
-print(x)
-#lalalasss
+class Net(nn.Module):
+    def __init__(self):
+        super(Net, self).__init__()
+        self.linear1 = nn.Linear()
+
+    def forward(self, x):
+        pass
+
+    def num_flat_features(self, x):
+        pass
+
+net1 = Net()
+print(Net)
