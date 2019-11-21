@@ -1,18 +1,18 @@
 import torch
+import torch.nn.functional as functional
 import torch.nn as nn
 
 #Testscript, if pytorch is installed
-class FirstNet(nn.Module):
+class MainNet(nn.Module):
     def __init__(self):
-        super(FirstNet, self).__init__()
+        super(MainNet, self).__init__()
         self.linear1 = nn.Linear(10, 10)
-        self.linear2 = nn.Linear(10, 10)
 
     def forward(self, x):
-        pass
+        x = functional.relu(self.linear1(x))
 
     def num_flat_features(self, x):
         pass
 
-net1 = FirstNet()
-print(FirstNet)
+net1 = MainNet()
+print(MainNet)
