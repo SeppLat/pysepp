@@ -12,7 +12,7 @@ class MainNet(nn.Module):
         x = functional.relu(self.linear1(x))
 
     def num_flat_features(self, x):
-        pass
+        size = x.size()
 
 net1 = MainNet()
 print(MainNet)
