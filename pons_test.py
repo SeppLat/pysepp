@@ -1,3 +1,12 @@
-from pons import get_pons_dicts
+#!/usr/bin/python3
 
-print(get_pons_dicts('de'))
+from pons import *
+from sys import argv, exit
+from pprint import pprint
+
+if(len(argv) < 2):
+    print("Usage: ./pons_test.py [pons secret]")
+    exit(-1)
+
+print(pprint(get_pons_dicts('de')))
+print(pprint(get_pons_translations('dela', 'arcere', argv[1])))

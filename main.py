@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import torch
 import torch.nn.functional as functional
 import torch.nn as nn
