@@ -8,5 +8,5 @@ if(len(argv) < 2):
     print("Usage: ./pons_test.py [pons secret]")
     exit(-1)
 
-print(pprint(get_pons_dicts('de')))
-print(pprint(get_pons_translations('dela', 'arcere', argv[1])))
+pprint(get_pons_dicts('de'))
+pprint(get_pons_translations('dela', 'arcere', argv[1]))
